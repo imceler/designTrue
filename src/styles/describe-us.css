@@ -1,0 +1,23 @@
+.describe-us {
+    position: absolute;
+    top: 24%;
+    left: 10%;
+}
+.describe-us h1 {
+    font-size: 46px;
+    margin: 0;
+    color: #FFF;
+    font-weight: 400;
+}
+.describe-us h2 {
+    font-size: 28px;
+    color: #FFF;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.describe-us h3 {
+    color: var(--yellow);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0;
+}
