@@ -1,7 +1,177 @@
+:root {
+    --spring: #61AC4A;
+    --apple: #C44848;
+    --sky: #37C2A6;
+    --grayce: #C2C2C2;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
     font-family: 'Segoe UI';
+}
+.background {
+    background-color: #276891;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+}
+.background img {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+.arrow-back {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 5%;
+    width: 50px;
+    height: 50px;
+}
+.arrow-back img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.title-wrap {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* .title-wrap::before {
+    content: "";
+    width: 10%;
+    height: 1px;
+    position: absolute;
+    left: 500px;
+    background: var(--grayce)
+}
+.title-wrap::after {
+    content: "";
+    width: 10%;
+    height: 1px;
+    position: absolute;
+    right: 500px;
+    background: var(--grayce)
+} */
+.title-wrap h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+}
+.table-content {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.table  {
+    width: 240px;
+    height: 450px;
+    margin: 0 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: -6px 6px 20px 0px rgba(0,0,0,0.50);
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    height: 35%;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.one .title {
+    background: var(--spring);
+}
+.two .title {
+    background: var(--apple);
+}
+.three .title {
+    background: var(--sky);
+}
+.title h2 {
+    font-size: 40px;
+    font-weight: 350;
+    margin: 0 0 18px 0;
+}
+.title h4 {
+    font-size: 17px;
+    font-weight: 400;
+}
+.table-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--grayce); 
+    border-radius: 0 0 12px 12px;
+}
+.table-body div {
+    width: 80%;
+    border-bottom: 1px solid #A2A2A2;
+    padding: 8px;
+}
+.table-body h5 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 100%;
+}
+.buy-now {
+    height: 12%;
+    width: 60%;
+    border: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size: .9em;
+    margin: 0 0 15px;
+    user-select: none;
+    cursor: pointer;
+}
+.one .buy-now {
+    background: var(--spring);
+}
+.two .buy-now {
+    background-color: var(--apple);
+}
+.three .buy-now {
+    background-color: var(--sky);
+}
+.one .buy-now:hover {
+    background: rgb(89, 195, 73);
+    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.50);
+    transition: .5s;
+
+}
+.two .buy-now:hover {
+    background-color: rgb(235, 79, 79);
+    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.50);
+    transition: .5s;
+}
+.three .buy-now:hover {
+    background-color: rgb(60, 209, 179);
+    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.50);
+    transition: .5s;
 }
