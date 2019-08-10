@@ -71,4 +71,8 @@ header {
     text-decoration: none;
     color: #FFF;
     font-size: 20px;  
+    cursor: pointer;
+}
+.nav ol li a:hover {
+    color: var(--yellow);
 }
