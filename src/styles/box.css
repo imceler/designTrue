@@ -47,6 +47,9 @@
     border: 1px solid transparent;
     border-radius: 12px;
 }
+/* .box:focus {
+
+} */
 .first {
     position: inherit;
     top: 0;

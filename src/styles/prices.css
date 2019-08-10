@@ -47,22 +47,6 @@
     justify-content: center;
     align-items: flex-end;
 }
-/* .title-wrap::before {
-    content: "";
-    width: 10%;
-    height: 1px;
-    position: absolute;
-    left: 500px;
-    background: var(--grayce)
-}
-.title-wrap::after {
-    content: "";
-    width: 10%;
-    height: 1px;
-    position: absolute;
-    right: 500px;
-    background: var(--grayce)
-} */
 .title-wrap h1 {
     margin: 0;
     font-size: 50px;
@@ -70,8 +54,11 @@
     color: white;
 }
 .table-content {
+    margin: 0 auto;
     position: absolute;
-    top: 10%;
+    height: 60vh;
+    width: 80vw;
+    top: 25%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -79,10 +66,13 @@
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: 25px;
 }
 .table  {
+    position: relative;
     width: 240px;
-    height: 450px;
+    left: -100px;
+    height: 0%;
     margin: 0 60px; 
     display: flex;
     justify-content: center;
@@ -92,13 +82,17 @@
     box-shadow: -6px 6px 20px 0px rgba(0,0,0,0.50);
 }
 .title {
+    position: absolute;
+    top: 0;
+    z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;   
-    height: 35%;
+    height: 6em;
     width: 100%;
     border-radius: 12px 12px 0 0;
+    position: relative;
 }
 .one .title {
     background: var(--spring);
@@ -110,16 +104,17 @@
     background: var(--sky);
 }
 .title h2 {
-    font-size: 40px;
+    font-size: 1.9em;
     font-weight: 350;
-    margin: 0 0 18px 0;
+    margin: 0 0 .5em 0;
 }
 .title h4 {
-    font-size: 17px;
+    font-size: .8em;
     font-weight: 400;
 }
 .table-body {
-    height: 100%;
+    font-size: 50px;
+    height: 6.5em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -132,6 +127,7 @@
     width: 80%;
     border-bottom: 1px solid #A2A2A2;
     padding: 8px;
+    display: none;
 }
 .table-body h5 {
     font-size: 16px;
@@ -145,10 +141,11 @@
     border: none;
     color: #FFF;
     font-weight: 400;
-    font-size: .9em;
+    font-size: 1rem;
     margin: 0 0 15px;
     user-select: none;
     cursor: pointer;
+    display: none;
 }
 .one .buy-now {
     background: var(--spring);
