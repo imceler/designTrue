@@ -1,12 +1,15 @@
 @import './box.css';
 @import './describe-us.css';
+@import './our-works.css';
 
 :root {
     --darkcolor: #1F033E;
     --red: #FE4449;
     --yellow: #DFB65D;
 }
-body {
+*,
+*::before, 
+*::after {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI';
@@ -18,24 +21,23 @@ header {
     width: 100%;
     height: 100vh;
     background-color: var(--darkcolor);
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 0;
 }
 .array {
     width: 100vw;
 }
 .array img {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -1px;
     right: 0;
-    z-index: 1;
 }
 .head {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -49,15 +51,16 @@ header {
     margin: 0;
     color: #FFF;
     position: absolute;
-    top: 30px;
+    top: .8em;
     left: 140px;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 400;
+    z-index: 5;
 }
 .nav {
     position: absolute;
     color: white;
-    right: 5%;
+    right: 3%;
 }
 .nav ol {
     display: flex;
