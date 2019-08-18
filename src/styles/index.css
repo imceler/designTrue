@@ -1,6 +1,7 @@
 @import './box.css';
 @import './describe-us.css';
 @import './our-works.css';
+@import './footer.css';
 
 :root {
     --darkcolor: #1F033E;

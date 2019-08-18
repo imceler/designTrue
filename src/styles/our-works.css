@@ -14,7 +14,7 @@
 }
 .array-2 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 0;
 }
 .works-description {
