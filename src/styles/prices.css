@@ -13,7 +13,7 @@
     font-family: 'Segoe UI';
 }
 .background {
-    background-color: #276891;
+    background-image: linear-gradient(to left, #0174BC 0%, #3292C4 100%);
     position: relative;
     top: 0;
     left: 0;
@@ -135,6 +135,9 @@
     text-align: center;
     line-height: 100%;
 }
+.table-body button {
+    user-select: none;
+}
 .buy-now {
     height: 12%;
     width: 60%;
@@ -157,18 +160,17 @@
     background-color: var(--sky);
 }
 .one .buy-now:hover {
-    background: rgb(89, 195, 73);
-    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.50);
-    transition: .5s;
-
+    background: rgb(100, 219, 82);
+    box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.20);
+    transition: .3s;
 }
 .two .buy-now:hover {
-    background-color: rgb(235, 79, 79);
-    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.50);
-    transition: .5s;
+    background-color: rgb(250, 83, 83);
+    box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.20);
+    transition: .3s;
 }
 .three .buy-now:hover {
-    background-color: rgb(60, 209, 179);
-    box-shadow: -4px 4px 5px 0px rgba(0,0,0,0.50);
-    transition: .5s;
+    background-color: rgb(63, 223, 191);
+    box-shadow: -1px 1px 15px 0px rgba(0,0,0,0.20);
+    transition: .3s;
 }

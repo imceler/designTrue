@@ -1,17 +1,29 @@
 const arrowBack = document.querySelector('.arrow-back img')
+const grid = document.querySelector('.works-grid')
+let timesFadeIn = 1;
 const tl = new TimelineMax();
-
-tl.fromTo('.table', .6, { x: '0'}, { x: '100px',  ease: Power1.easeInOut})
-.fromTo('.table', .8, { height: '10%' }, { height: '100%', ease: Power1.easeInOut })
-.fromTo('.table-body', 1.2, { opacity: '.3'}, { opacity: '1', ease: Power1.easeInOut}, '-=1')
-.fromTo('.table-body div', 2, { opacity: '0'}, { opacity: '1', ease: Power1.easeInOut }, '-=1')
-.fromTo('.table-body button', 1, { opacity: '0'}, { opacity: '1', ease: Power1.easeInOut}, '-=2')
-.fromTo('.table-body div', 1, {display: 'none'}, {display: 'block', ease: Power1.easeInOut }, '-=4')
-.fromTo('.table-body button', 1, {display: 'none'}, {display: 'block', ease: Power1.easeInOut }, '-=4')
 
 var backHome = () => {
     location.replace("./index.html");
 }
+if (location.href.endsWith('/prices.html') === true)
 arrowBack.addEventListener('click', () => {
     backHome()
 })
+
+const options = {
+    // root: document.querySelector('.'), 
+    rootMargin: '0px 0px 100px 0px',
+    threshold: .5,
+}
+function callback (entries, observer) {
+        if (entries[0].isIntersecting) {
+            if (timesFadeIn <= 1) {
+                tl.fromTo('.item', 1, {x: 0, opacity: '.2'}, {x: 120, opacity: '1'});
+                timesFadeIn++
+                console.log(i)
+            }
+    } 
+}
+const observer = new IntersectionObserver(callback, options)
+observer.observe(grid)
