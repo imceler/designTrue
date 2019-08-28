@@ -17,4 +17,4 @@ Gsap (Animation library) 🌫
 <h6>Hey, Look how it looks on Instagram</h6>
 Instagram <a href='https://www.instagram.com/imceler/'>@imceler</a>
 Twitter <a href='https://twitter.com/imceler'>@imceler</a>
-</div># designTrue
+</div>
