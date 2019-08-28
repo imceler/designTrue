@@ -6,13 +6,11 @@
 Post css 🔺
 Css Grid 💠
 Css Animations ✨
-</div>
 
 <h5>New things learn in this project:</h5>
 
 Intersection Observer 👀
 Gsap (Animation library) 🌫
-</div>
 
 <h6>Mockoup made in adobe XD</h6>
 
