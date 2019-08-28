@@ -1,3 +1,4 @@
+<div align='center'>
 <h1 style="text-align: center;">Design True</h1>
 <h4>DesignTrue it's a landing page with an opt-in-form with animations and some effects</h4>
 <h5>Built with: </h5>
