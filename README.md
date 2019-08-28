@@ -3,14 +3,14 @@
 <h4>DesignTrue it's a landing page with an opt-in-form with animations and some effects</h4>
 <h5>Built with: </h5>
 
-- Post css 🔺
-- Css Grid 💠
-- Css Animations ✨
+Post css 🔺
+Css Grid 💠
+Css Animations ✨
 
 <h5>New things learn in this project:</h5>
 
-- Intersection Observer 👀
-- Gsap (Animation library) 🌫
+Intersection Observer 👀
+Gsap (Animation library) 🌫
 
 <h6>Mockoup made in adobe XD</h6>
 
